@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NKOverWrapLogger'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NKOverWrapLogger.'
+  s.summary          = 'It is a logger that is always displayed at the top.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,16 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+It is a logger that is always displayed at the top.
+It is useful when testing the operation such as Enterprise build, which is troublesome log output.
                        DESC
 
-  s.homepage         = 'https://github.com/99d5643518486d8d3f2c6ad125623e69bc57e04d/NKOverWrapLogger'
+  s.homepage         = 'https://github.com/Atsumi3/NKOverWrapLogger'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '99d5643518486d8d3f2c6ad125623e69bc57e04d' => 'atsumi@mail.bizen.jp' }
-  s.source           = { :git => 'https://github.com/99d5643518486d8d3f2c6ad125623e69bc57e04d/NKOverWrapLogger.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Atsumi3' => 'atsumi@mail.bizen.jp' }
+  s.source           = { :git => 'https://github.com/Atsumi3/NKOverWrapLogger.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/Atsumi3'
 
   s.ios.deployment_target = '8.0'
 
