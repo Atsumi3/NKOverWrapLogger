@@ -1,9 +1,13 @@
-//
-//  SecondViewController.swift
-//  NKOverWrapLogger_Example
-//
-//  Created by telneko on 2018/09/27.
-//  Copyright © 2018年 CocoaPods. All rights reserved.
-//
+import UIKit
+import NKOverWrapLogger
 
-import Foundation
+class SecondViewController: UIViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NKOverWrapLogger.shared.log("SecondViewController!!")
+    }
+    @IBAction func onGoBackClick(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+}

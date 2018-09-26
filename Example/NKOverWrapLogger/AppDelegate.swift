@@ -1,22 +1,16 @@
-//
-//  AppDelegate.swift
-//  NKOverWrapLogger
-//
-//  Created by 99d5643518486d8d3f2c6ad125623e69bc57e04d on 09/27/2018.
-//  Copyright (c) 2018 99d5643518486d8d3f2c6ad125623e69bc57e04d. All rights reserved.
-//
-
 import UIKit
+import NKOverWrapLogger
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        // logger setup.
+        NKOverWrapLogger.setup(uiWindowHoldingObject: self, key: "window")
         return true
     }
 
