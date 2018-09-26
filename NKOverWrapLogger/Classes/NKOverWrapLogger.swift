@@ -4,7 +4,7 @@ import UIKit
 public class NKOverWrapLogger: UIView {
     private static let DEFAULT_VIEW_MARGIN: Int = 16
     private static var instance: NKOverWrapLogger?
-    static var shared: NKOverWrapLogger {
+    public static var shared: NKOverWrapLogger {
         if instance == nil {
             instance = NKOverWrapLogger(frame: CGRect.zero)
         }
@@ -34,7 +34,7 @@ public class NKOverWrapLogger: UIView {
         }
     }
     
-    public func logD(_ message: String) {
+    public func log(_ message: String) {
         loggingText = loggingText + message + "\n"
     }
     
@@ -44,7 +44,7 @@ public class NKOverWrapLogger: UIView {
         updateViews()
     }
     
-    internal required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initOnce()
         updateViews()
