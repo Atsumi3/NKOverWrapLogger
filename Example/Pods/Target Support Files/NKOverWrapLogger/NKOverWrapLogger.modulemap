@@ -1,0 +1,6 @@
+framework module NKOverWrapLogger {
+  umbrella header "NKOverWrapLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}
