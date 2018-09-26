@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NKOverWrapLogger'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'It is a logger that is always displayed at the top.'
   s.swift_version    = '3.2'
 
